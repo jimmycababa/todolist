@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>ToDos</h1>
+    <h1>Online Journal</h1>
     <ul> 
         <% for(let i = 0; i < zebra.length; i++){ %>
             <li class="todoItem">
@@ -17,16 +17,17 @@
                     <% }else{ %>
                     <span><%= zebra[i].todo %></span>
                     <% } %>   
-                    <span class='del'> Delete </span>
+                    <span class='del'><button> delete </button></span>
+                    <span class="feed"><button> add to feed </button></span>
                 </li>
             <% } %>    
             </ul>
 
-            <h2>Things left to do: <%= left %></h2>
 
 
     <form action="createTodo" method="POST">
-        <input type="text" placeholder ="Enter Todo Item" name="todoItem">
+        <input type="date" name="enter date" min="2020-01-01" max="2030-12-31" >
+        <input type="text" placeholder ="enter memory" name="todoItem">
         <input type="submit">
     </form>
     <script src="/js/main.js"></script>
