@@ -14,9 +14,6 @@ Array.from(todoItem).forEach((el) => {
     el.addEventListener('click', markComplete)
 })
 
-Array.from(todoComplete).forEach((el) => {
-    el.addEventListener('click', undo)
-})
 // this stands for the class (del) and we want to go up to the first li (parentNode) and go to the span that has the text (childNode). then the text will be stored in todoText. 
 // spaces are counted as nodes so thats why we have [1]
 // we then make our fetch request, its delete request and it will have some json and we are sending a req body along with that delete req and we can grab the stuff out of it by using the rainbowUnicorn
