@@ -1,4 +1,5 @@
 const deleteBtn = document.querySelectorAll('.del')
+const feedBtn = document.querySelectorAll('.feed')
 // this event listener is saying that if you click on anything that has this span inside of todoItem then mark them complete.
 const todoItem = document.querySelectorAll('.todoItem span')
 const todoItemComplete = document.querySelectorAll('.todoItem span.completed')
